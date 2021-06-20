@@ -13,7 +13,7 @@ int dig;
 for (dig = '0' ; dig <= '9' ; dig++)
 {
 putchar(dig);
-if (dig < 9)
+if (dig < '9')
 {
 putchar(',');
 putchar(' ');
