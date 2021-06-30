@@ -11,9 +11,7 @@ void puts_half(char *str)
 int cont, even, neg;
 
 for (cont = 0; str[cont] != '\0'; cont++)
-{
 ;
-}
 if ((cont % 2) == 0)
 {
 for (even = cont / 2; str[even] != '\0'; even++)
