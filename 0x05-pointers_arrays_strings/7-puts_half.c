@@ -12,6 +12,8 @@ int cont, even, neg;
 
 for (cont = 0; str[cont] != '\0'; cont++)
 {
+;
+}
 if ((cont % 2) == 0)
 {
 for (even = cont / 2; str[even] != '\0'; even++)
@@ -23,5 +25,4 @@ for (neg = (cont - 1) / 2; str[neg] != '\0'; neg++)
 _putchar(str[neg + 1]);
 }
 _putchar('\n');
-}
 }
