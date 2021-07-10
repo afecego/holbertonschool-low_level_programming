@@ -11,16 +11,10 @@
 
 int main(int argc, char *argv[])
 {
-int res;
-int fac1;
-int fac2;
 
 if (argc == 3)
 {
-fac1 = atoi(argv[1]);
-fac2 = atoi(argv[2]);
-res = fac1 * fac2;
-printf("%d\n", res);
+printf("%d\n", atoi(argv[1]) * atoi(argv[2]));
 return (0);
 }
 else
