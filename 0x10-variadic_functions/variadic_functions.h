@@ -8,6 +8,13 @@ int _putchar(char c);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
+
+/**
+ * struct impre - Estructura de las funciones
+ * @t: Elemento char de la estructura
+ * @f: Elemento funcion de la estructura
+ */
+
 typedef struct impre
 {
 char *t;
