@@ -12,8 +12,7 @@ typedef struct impre
 {
 char *t;
 void (*f)(va_list);
-
-}impresion;
+} impresion;
 void print_char(va_list c);
 void print_int(va_list i);
 void print_float(va_list f);
