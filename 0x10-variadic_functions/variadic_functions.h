@@ -8,6 +8,11 @@ int _putchar(char c);
 void print_strings(const char *separator, const unsigned int n, ...);
 void print_all(const char * const format, ...);
 void print_numbers(const char *separator, const unsigned int n, ...);
+void print_char(va_list c);
+void print_int(va_list i);
+void print_float(va_list f);
+void print_string(va_list s);
+
 
 /**
  * struct impre - Estructura de las funciones
@@ -20,9 +25,5 @@ typedef struct impre
 char *t;
 void (*f)(va_list);
 } impresion;
-void print_char(va_list c);
-void print_int(va_list i);
-void print_float(va_list f);
-void print_string(va_list s);
 
 #endif
