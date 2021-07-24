@@ -47,10 +47,7 @@ if (out == NULL)
 {
 printf("(nil)");
 }
-else
-{
 printf("%s", out);
-}
 }
 
 /**
