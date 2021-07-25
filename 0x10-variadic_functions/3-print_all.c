@@ -85,11 +85,11 @@ if (*(valores[j].t) == format[i])
 printf("%s", separador);
 valores[j].f(ap);
 separador = ", ";
-break;
 }
 j++;
 }
 i++;
+j = 0;
 }
 printf("\n");
 va_end(ap);
