@@ -1,1 +1,4 @@
 C - Variadic functions
+
+# Description
+This activity corresponds to a project defined in the curriculum established by Holberton School which directs us to the creation of a function that executes the functionalities of the "printf" function established in the standard library <stdlib>. It is an activity in pairs and in collaborative use of the github repository tools.This activity corresponds to a project defined in the curriculum established by Holberton School which directs us to the creation of a function that executes the functionalities of the "printf" function established in the standard library <stdlib>. It is an activity in pairs and in collaborative use of the github repository tools.
