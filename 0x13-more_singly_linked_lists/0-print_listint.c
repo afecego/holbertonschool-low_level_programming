@@ -11,7 +11,7 @@ int i = 0;
 
 if (h == NULL)
 {
-return(0);
+return (0);
 }
 
 while (h != NULL)
@@ -20,5 +20,5 @@ printf("%d\n", h->n);
 i++;
 h = h->next;
 }
-return(i);
+return (i);
 }
