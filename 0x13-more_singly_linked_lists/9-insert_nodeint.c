@@ -3,9 +3,8 @@
 /**
  * insert_nodeint_at_index - check the code
  * @head: list
- * @idx:
- * @n:
- * Return: Always 0.
+ * @idx: Index de los nodos
+ * @n: Dato a ingresar en el Nodo* Return: Always 0.
  */
 
 
