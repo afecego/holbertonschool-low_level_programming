@@ -13,6 +13,7 @@ unsigned int binary_to_uint(const char *b)
 	int multi = 1;
 
 	if (b == NULL)
+
 	{
 		return (0);
 	}
@@ -22,9 +23,7 @@ unsigned int binary_to_uint(const char *b)
 			{
 				return (0);
 			}
-		
 		newb = b[i];
-			
 			if (newb == '1')
 			{
 				res += multi;
