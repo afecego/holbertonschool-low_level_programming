@@ -22,6 +22,12 @@ unsigned int binary_to_uint(const char *b)
 			{
 				return (0);
 			}
+		i++;
+	}
+	i = 0;
+	for (i = len - 1; i >= 0; i--)
+	{
+
 		newb = b[i];
 			if (newb == '1')
 			{
