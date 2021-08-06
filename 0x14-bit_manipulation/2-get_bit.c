@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * print_binary - print representation from binary number
+ * pget_bit - print representation from binary number
  * @n: long of bit
  * @index: index del bit
  * Return: Always 0.
