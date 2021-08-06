@@ -1,6 +1,6 @@
 #include "main.h"
 /**
- * get_bit - print representation from binary number
+ * set_bit - change bit for 1
  * @n: long of bit
  * @index: index del bit
  * Return: Always 0.
