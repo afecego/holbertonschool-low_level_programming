@@ -38,9 +38,8 @@ void copy(const char *file_from, const char *file_to)
 	}
 
 	copyfd = open(file_to, O_CREAT | O_WRONLY | O_TRUNC, 0664);
-	bytes = read(fd, buffer, 1024);
 
-	while (bytes > 0)
+	while ((bytes = read(fd, buffer, 1024)) > 0)
 	{
 		if (write(copyfd, buffer, bytes) != bytes || copyfd == -1)
 		{
