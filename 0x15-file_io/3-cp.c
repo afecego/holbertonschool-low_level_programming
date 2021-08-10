@@ -5,7 +5,7 @@
  * @argv: pointer to info de argc
  * Return: exit.
  */
-int main(int argc, char **argv[])
+int main(int argc, char **argv)
 {
 if (argc != 3)
 {
@@ -42,7 +42,7 @@ void copy(const char *file_from, const char *file_to)
 
 	while (bytes > 0)
 	{
-		if (write(copyfd, buffer, bytes) != bytes || copy == -1)
+		if (write(copyfd, buffer, bytes) != bytes || copyfd == -1)
 		{
 			dprintf(STDERR_FILENO, "Error: Can't write to %s\n", file_to);
 			exit(99);
