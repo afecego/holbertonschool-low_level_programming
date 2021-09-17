@@ -1,7 +1,7 @@
 #include "lists.h"
 
 /**
- * print_dlistint - Print elements of structur
+ * dlistint_len - Print total elements of structur
  * @h: pointer of head
  * Return: number of nodes.
  */
