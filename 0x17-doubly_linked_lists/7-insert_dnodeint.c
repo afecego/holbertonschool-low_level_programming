@@ -10,70 +10,36 @@
 
 dlistint_t *insert_dnodeint_at_index(dlistint_t **h, unsigned int idx, int n)
 {
-	dlistint_t *current = NULL, *Newnodo = NULL;
-	unsigned int length = 0, i = 0;
+	unsigned int i;
+	dlistint_t *old, *new;
 
-	if (*h == NULL)
+	if (h == NULL)
 		return (NULL);
-
-	length = dlistint_len(*h);
-	if (*h == NULL && idx == 0)
-		return (add_dnodeint(h, n));
-
-	else if (length == idx)
-		return (add_dnodeint_end(h, n));
-
-	current = *h;
-	while (current != NULL)
+	if (idx != 0)
 	{
-		if (i == idx)
+		old = *h;
+		for (i = 0; i < idx - 1 && old != NULL; i++)
 		{
-			Newnodo = createNode(n, current, current->prev);
-			current->prev = Newnodo;
-			current = Newnodo;
-			current->prev->next = Newnodo;
-			return (Newnodo);
+			old = old->next;
 		}
-		current = current->next;
-		++i;
+		if (old == NULL)
+		{
+			return (NULL);
+		}
 	}
-	return (current);
-}
-
-/**
- * dlistint_len - Print total elements of structur
- * @h: pointer of head
- * Return: number of nodes.
- */
-
-size_t dlistint_len(const dlistint_t *h)
-{
-	int length;
-
-	for (length = 0; h != NULL; length++)
+	new = malloc(sizeof(dlistint_t));
+	if (new == NULL)
 	{
-		h = h->next;
-	}
-	return (length);
-}
-
-/**
- * createNode - Creat new node
- * @n: Date of de new node
- * @next: Next of de new node
- * @prev: Previos of the new node
- * Return: new node.
- */
-
-dlistint_t *createNode(unsigned int n, void *next, void *prev)
-{
-	dlistint_t *Newnodo = malloc(sizeof(dlistint_t));
-
-	if (Newnodo == NULL)
 		return (NULL);
-
-	Newnodo->n = n;
-	Newnodo->next = next;
-	Newnodo->prev = prev;
-	return (Newnodo);
+	}
+	new->n = n;
+	if (idx == 0)
+	{
+		new->next = *h;
+		*h = new;
+		return (new);
+	}
+	new->next = old->next;
+	old->next = new;
+	return (new);
 }
